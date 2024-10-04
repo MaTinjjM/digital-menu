@@ -5,7 +5,7 @@ export function Items(props) {
     return(
             <div className='relative flex flex-nowrap mx-4  p-3 rounded-xl bg-[#282828] mt-6'>
                  <span>
-                  <img src={props?.Source} className='flex me-2 w-24 h-24 rounded-xl'></img>
+                  <img src={props?.Source} className='flex me-2 w-24 h-24 rounded-xl alt="Food"'></img>
                  </span>
                  <div className="flex flex-col mt-1 ml-28 mr-2">
                       <h1 className="text-white font-bold text-lg">{props?.Name}</h1>

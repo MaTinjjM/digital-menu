@@ -1,27 +1,38 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { faBell, faCartShopping, faHome, faPersonRifle, faPhone, faPhoneAlt, faPhoneSquare, faUser, faUserAlt, faUserAltSlash, faUserCheck, faUserCircle, faUserCog, faUserFriends, faUserLarge, faUserMd, faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import { faPerson } from '@fortawesome/free-solid-svg-icons/faPerson';
+import { faUserDoctor } from '@fortawesome/free-solid-svg-icons/faUserDoctor';
 
 export function Footer(props) {
     return(
-            <div className='fixed bottom-6 bg-black '>
-    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
-    </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">About</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline">Contact</a>
-        </li>
-    </ul>
-    </div>
-            </div>
+        <div className='fixed bottom-0 bg-black'>
+                <div id='Right-Footer' className=' absolute bottom-0 md:bottom-[10rem] lg:bottom-0 right-[0.3rem] lg:right-[-0.1rem]' >
+                   <div className='flex rounded-tr-xl text-[#B7B9C8] bg-[#232323] lg:py-[0.5rem] px-[1.0rem] lg:px-[3.4rem] shadow-[rgba(40,40,40,1)_0px_0px_10px_7px]'>
+                      <button onClick={"#"} className=''>
+                         <FontAwesomeIcon icon={faHome} onClick={'#'} className='mt-2 w-6 h-6 p-5  hover:text-red-500' />
+                      </button>
+                       <button onClick={"#"} className=''>
+                         <FontAwesomeIcon icon={faUser} onClick={'#'} className='mt-2 w-6 h-6 p-5  hover:text-red-500' />
+                      </button>
+                   </div>
+                </div>
+
+                <div id='Left-Footer' className='absolute bottom-0 lg:bottom-0 right-[15rem] lg:right-[19.2rem] '>
+                    <div className='flex bg-[#232323] rounded-tl-xl lg:py-[0.5rem] px-[1.2rem] lg:px-[3.8rem] text-[#B7B9C8] shadow-[rgba(40,40,40,1)_0px_0px_10px_7px]'>
+                       <button onClick={"#"} className=''>
+                         <FontAwesomeIcon icon={faCartShopping} onClick={'#'} className='mt-2 w-6 h-6 p-5  hover:text-red-500' />
+                       </button>
+                       <button onClick={"#"} className=''>
+                         <FontAwesomeIcon icon={faPhone} onClick={'#'} className='mt-2 w-6 h-5 p-5 hover:text-red-500' />
+                       </button>
+                      </div>
+                </div>
+                <div id='Middle' className='absolute bottom-[1.5rem] lg:bottom-[2.3rem] right-[10.9rem] lg:right-[15.2rem] mb-4 bg-red-500 rounded-2xl'>
+                   <div className='absolute top-[3.8rem]  py-[2rem] left-[-1rem] lg:left-[-0.8rem] px-[3rem] lg:px-[4rem] bg-[#232323] '></div>
+                   <button onClick={"#"} className='shadow-[rgba(33,34,48,0.5)_10px_50px_5px_10px]'>
+                     <FontAwesomeIcon icon={faBell} onClick={'#'} className='mt-2 w-6 h-6 py-3 px-4 text-white' />
+                   </button>
+                </div>
+        </div>
     )
 }

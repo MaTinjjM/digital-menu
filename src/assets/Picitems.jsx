@@ -5,7 +5,7 @@ export function PicItems(props) {
     return(
             <div className='relative p-3 rounded-xl mt-6'>
                  <span>
-                  <img src={props?.Source} className='relative w-full h-[24rem] blur-[0.2px] rounded-xl'></img>
+                  <img src={props?.Source} alt="Food" className='relative w-full h-[24rem] blur-[0.2px] rounded-xl'></img>
                  </span>
                  <div className="">
                       <div className='absolute top-[18rem] py-14 lg:px-[16.75rem] px-[12.2rem] rounded-xl bg-gradient-to-b from-[#2a2a2a00] via-[#2d3b50] to-[#304058]'></div>
